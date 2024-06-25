@@ -206,20 +206,17 @@ Complete the exercise in the space below:
 
 
 function basicCalculator(num1, num2, operation) {
-    switch (operation) {
-        case 'add':
-            return num1 + num2;
-        case 'subtract':
-            return num1 - num2;
-        case 'multiply':
-            return num1 * num2;
-        case 'divide':
-            return num1 / num2;
-        default:
-            return 'False';
+    if (operation === 'add') {
+        console.log(num1 + num2)
+    } else if (operation === 'multiply'){
+        console.log(num1 * num2)
+    }else if (operation === 'subtract'){
+        console.log(num1 - num2)
+    }else if (operation === 'division'){
+        console.log(num1 / num2)
     }
 }
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "add"));
 
 
 
